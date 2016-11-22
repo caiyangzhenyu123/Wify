@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		836B1AD11DE4092F00092ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1AD01DE4092F00092ACD /* AppDelegate.swift */; };
+		836B1AD31DE4092F00092ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1AD21DE4092F00092ACD /* ViewController.swift */; };
+		836B1AD61DE4092F00092ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B1AD41DE4092F00092ACD /* Main.storyboard */; };
+		836B1AD81DE4092F00092ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836B1AD71DE4092F00092ACD /* Assets.xcassets */; };
+		836B1ADB1DE4092F00092ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836B1AD91DE4092F00092ACD /* LaunchScreen.storyboard */; };
+		836B1AE61DE4092F00092ACD /* WifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1AE51DE4092F00092ACD /* WifyTests.swift */; };
+		836B1AF11DE4092F00092ACD /* WifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1AF01DE4092F00092ACD /* WifyUITests.swift */; };
+		9B80E6C4AA87258A6FDDAE58 /* Pods_Wify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BF4D4A728371BA01CF887B /* Pods_Wify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		836B1AE21DE4092F00092ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 836B1AC51DE4092F00092ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836B1ACC1DE4092F00092ACD;
+			remoteInfo = Wify;
+		};
+		836B1AED1DE4092F00092ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 836B1AC51DE4092F00092ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836B1ACC1DE4092F00092ACD;
+			remoteInfo = Wify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		836B1ACD1DE4092F00092ACD /* Wify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		836B1AD01DE4092F00092ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		836B1AD21DE4092F00092ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		836B1AD51DE4092F00092ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		836B1AD71DE4092F00092ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		836B1ADA1DE4092F00092ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		836B1ADC1DE4092F00092ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836B1AE11DE4092F00092ACD /* WifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836B1AE51DE4092F00092ACD /* WifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifyTests.swift; sourceTree = "<group>"; };
+		836B1AE71DE4092F00092ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836B1AEC1DE4092F00092ACD /* WifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836B1AF01DE4092F00092ACD /* WifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifyUITests.swift; sourceTree = "<group>"; };
+		836B1AF21DE4092F00092ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8957BD76A3511436A819CD60 /* Pods-Wify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wify/Pods-Wify.release.xcconfig"; sourceTree = "<group>"; };
+		C2BF4D4A728371BA01CF887B /* Pods_Wify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E6931BE465567E64C337F3 /* Pods-Wify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wify/Pods-Wify.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		836B1ACA1DE4092F00092ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B80E6C4AA87258A6FDDAE58 /* Pods_Wify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1ADE1DE4092F00092ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1AE91DE4092F00092ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094A53A4F7C4091A6EC49ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2BF4D4A728371BA01CF887B /* Pods_Wify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BCBE398F136891AD69A3DB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6931BE465567E64C337F3 /* Pods-Wify.debug.xcconfig */,
+				8957BD76A3511436A819CD60 /* Pods-Wify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		836B1AC41DE4092F00092ACD = {
+			isa = PBXGroup;
+			children = (
+				836B1ACF1DE4092F00092ACD /* Wify */,
+				836B1AE41DE4092F00092ACD /* WifyTests */,
+				836B1AEF1DE4092F00092ACD /* WifyUITests */,
+				836B1ACE1DE4092F00092ACD /* Products */,
+				3BCBE398F136891AD69A3DB2 /* Pods */,
+				094A53A4F7C4091A6EC49ECE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		836B1ACE1DE4092F00092ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				836B1ACD1DE4092F00092ACD /* Wify.app */,
+				836B1AE11DE4092F00092ACD /* WifyTests.xctest */,
+				836B1AEC1DE4092F00092ACD /* WifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		836B1ACF1DE4092F00092ACD /* Wify */ = {
+			isa = PBXGroup;
+			children = (
+				836B1AD01DE4092F00092ACD /* AppDelegate.swift */,
+				836B1AD21DE4092F00092ACD /* ViewController.swift */,
+				836B1AD41DE4092F00092ACD /* Main.storyboard */,
+				836B1AD71DE4092F00092ACD /* Assets.xcassets */,
+				836B1AD91DE4092F00092ACD /* LaunchScreen.storyboard */,
+				836B1ADC1DE4092F00092ACD /* Info.plist */,
+			);
+			path = Wify;
+			sourceTree = "<group>";
+		};
+		836B1AE41DE4092F00092ACD /* WifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				836B1AE51DE4092F00092ACD /* WifyTests.swift */,
+				836B1AE71DE4092F00092ACD /* Info.plist */,
+			);
+			path = WifyTests;
+			sourceTree = "<group>";
+		};
+		836B1AEF1DE4092F00092ACD /* WifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				836B1AF01DE4092F00092ACD /* WifyUITests.swift */,
+				836B1AF21DE4092F00092ACD /* Info.plist */,
+			);
+			path = WifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		836B1ACC1DE4092F00092ACD /* Wify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836B1AF51DE4092F00092ACD /* Build configuration list for PBXNativeTarget "Wify" */;
+			buildPhases = (
+				455CAA709FA2DC21BD8D52E9 /* [CP] Check Pods Manifest.lock */,
+				836B1AC91DE4092F00092ACD /* Sources */,
+				836B1ACA1DE4092F00092ACD /* Frameworks */,
+				836B1ACB1DE4092F00092ACD /* Resources */,
+				1446671973C5875A7A88C5B7 /* [CP] Embed Pods Frameworks */,
+				B39B0B6886C2A2AE18F895E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wify;
+			productName = Wify;
+			productReference = 836B1ACD1DE4092F00092ACD /* Wify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		836B1AE01DE4092F00092ACD /* WifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836B1AF81DE4092F00092ACD /* Build configuration list for PBXNativeTarget "WifyTests" */;
+			buildPhases = (
+				836B1ADD1DE4092F00092ACD /* Sources */,
+				836B1ADE1DE4092F00092ACD /* Frameworks */,
+				836B1ADF1DE4092F00092ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836B1AE31DE4092F00092ACD /* PBXTargetDependency */,
+			);
+			name = WifyTests;
+			productName = WifyTests;
+			productReference = 836B1AE11DE4092F00092ACD /* WifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		836B1AEB1DE4092F00092ACD /* WifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836B1AFB1DE4092F00092ACD /* Build configuration list for PBXNativeTarget "WifyUITests" */;
+			buildPhases = (
+				836B1AE81DE4092F00092ACD /* Sources */,
+				836B1AE91DE4092F00092ACD /* Frameworks */,
+				836B1AEA1DE4092F00092ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836B1AEE1DE4092F00092ACD /* PBXTargetDependency */,
+			);
+			name = WifyUITests;
+			productName = WifyUITests;
+			productReference = 836B1AEC1DE4092F00092ACD /* WifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		836B1AC51DE4092F00092ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = caiyangzhenyu;
+				TargetAttributes = {
+					836B1ACC1DE4092F00092ACD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NR2PB6D8F2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					836B1AE01DE4092F00092ACD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NR2PB6D8F2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 836B1ACC1DE4092F00092ACD;
+					};
+					836B1AEB1DE4092F00092ACD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NR2PB6D8F2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 836B1ACC1DE4092F00092ACD;
+					};
+				};
+			};
+			buildConfigurationList = 836B1AC81DE4092F00092ACD /* Build configuration list for PBXProject "Wify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 836B1AC41DE4092F00092ACD;
+			productRefGroup = 836B1ACE1DE4092F00092ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				836B1ACC1DE4092F00092ACD /* Wify */,
+				836B1AE01DE4092F00092ACD /* WifyTests */,
+				836B1AEB1DE4092F00092ACD /* WifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		836B1ACB1DE4092F00092ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B1ADB1DE4092F00092ACD /* LaunchScreen.storyboard in Resources */,
+				836B1AD81DE4092F00092ACD /* Assets.xcassets in Resources */,
+				836B1AD61DE4092F00092ACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1ADF1DE4092F00092ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1AEA1DE4092F00092ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1446671973C5875A7A88C5B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wify/Pods-Wify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		455CAA709FA2DC21BD8D52E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B39B0B6886C2A2AE18F895E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wify/Pods-Wify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		836B1AC91DE4092F00092ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B1AD31DE4092F00092ACD /* ViewController.swift in Sources */,
+				836B1AD11DE4092F00092ACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1ADD1DE4092F00092ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B1AE61DE4092F00092ACD /* WifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B1AE81DE4092F00092ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B1AF11DE4092F00092ACD /* WifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		836B1AE31DE4092F00092ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836B1ACC1DE4092F00092ACD /* Wify */;
+			targetProxy = 836B1AE21DE4092F00092ACD /* PBXContainerItemProxy */;
+		};
+		836B1AEE1DE4092F00092ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836B1ACC1DE4092F00092ACD /* Wify */;
+			targetProxy = 836B1AED1DE4092F00092ACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		836B1AD41DE4092F00092ACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836B1AD51DE4092F00092ACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		836B1AD91DE4092F00092ACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836B1ADA1DE4092F00092ACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		836B1AF31DE4092F00092ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		836B1AF41DE4092F00092ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		836B1AF61DE4092F00092ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E6931BE465567E64C337F3 /* Pods-Wify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = Wify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.Wify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		836B1AF71DE4092F00092ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8957BD76A3511436A819CD60 /* Pods-Wify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = Wify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.Wify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		836B1AF91DE4092F00092ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = WifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.WifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wify.app/Wify";
+			};
+			name = Debug;
+		};
+		836B1AFA1DE4092F00092ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = WifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.WifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wify.app/Wify";
+			};
+			name = Release;
+		};
+		836B1AFC1DE4092F00092ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = WifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.WifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Wify;
+			};
+			name = Debug;
+		};
+		836B1AFD1DE4092F00092ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = NR2PB6D8F2;
+				INFOPLIST_FILE = WifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = caiyangzhenyu.WifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Wify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		836B1AC81DE4092F00092ACD /* Build configuration list for PBXProject "Wify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B1AF31DE4092F00092ACD /* Debug */,
+				836B1AF41DE4092F00092ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836B1AF51DE4092F00092ACD /* Build configuration list for PBXNativeTarget "Wify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B1AF61DE4092F00092ACD /* Debug */,
+				836B1AF71DE4092F00092ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836B1AF81DE4092F00092ACD /* Build configuration list for PBXNativeTarget "WifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B1AF91DE4092F00092ACD /* Debug */,
+				836B1AFA1DE4092F00092ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836B1AFB1DE4092F00092ACD /* Build configuration list for PBXNativeTarget "WifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B1AFC1DE4092F00092ACD /* Debug */,
+				836B1AFD1DE4092F00092ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 836B1AC51DE4092F00092ACD /* Project object */;
+}
