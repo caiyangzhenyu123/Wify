@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if UserDefaults.standard.object(forKey: "records") == nil {
             let arr = NSArray.init()
-          
+            
             UserDefaults.standard.setValue(arr, forKey: "records")
         }
         
@@ -48,6 +48,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else {
             print("网络类型:无连接")
         }
+        
+//        推送
+        let uns = UIUserNotificationSettings.init(types: UIUserNotificationType.alert.union(UIUserNotificationType.sound).union(UIUserNotificationType.badge), categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(uns)
         reachability.whenReachable = { reachability in
             print(reachability.currentReachabilityStatus)
             if reachability.currentReachabilityStatus == .reachableViaWiFi {
@@ -59,8 +63,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     arr.removeObject(at: 0)
                 }
                 arr.add(dic)
+                let noti = UILocalNotification.init()
+                if #available(iOS 8.2, *) {
+                    noti.alertTitle = self.getSSID()
+                } else {
+                    // Fallback on earlier versions
+                }
+                
                 
                 UserDefaults.standard.setValue(arr, forKey: "records")
+                noti.alertBody = self.nowDateFormatter()
+                noti.soundName = UILocalNotificationDefaultSoundName
+                noti.applicationIconBadgeNumber = 1
+                application.presentLocalNotificationNow(noti)
             }
         }
         do {
@@ -127,6 +142,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         NotificationCenter.default.post(name: NSNotification.Name.init("refresh"), object: nil)
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
