@@ -33,15 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if reachability.isReachableViaWiFi {
             print("网络类型:Wify")
             
-            let dic = NSMutableDictionary()
-            dic.setObject(getSSID(), forKey: "name" as NSCopying)
-            dic.setObject(nowDateFormatter(), forKey: "time" as NSCopying)
-            let arr = NSMutableArray.init(array: UserDefaults.standard.value(forKey: "records") as! NSArray)
-            if arr.count > 20 {
-                arr.removeObject(at: 0)
-            }
-             arr.add(dic)
-            UserDefaults.standard.setValue(arr, forKey: "records")
+//            let dic = NSMutableDictionary()
+//            dic.setObject(getSSID(), forKey: "name" as NSCopying)
+//            dic.setObject(nowDateFormatter(), forKey: "time" as NSCopying)
+//            let arr = NSMutableArray.init(array: UserDefaults.standard.value(forKey: "records") as! NSArray)
+//            if arr.count > 20 {
+//                arr.removeObject(at: 0)
+//            }
+//             arr.add(dic)
+//            UserDefaults.standard.setValue(arr, forKey: "records")
             
         }else if reachability.isReachableViaWWAN {
             print("网络类型:移动网络")
@@ -126,6 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        NotificationCenter.default.post(name: NSNotification.Name.init("refresh"), object: nil)
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
