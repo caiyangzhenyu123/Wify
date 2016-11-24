@@ -14,9 +14,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.notis), name: NSNotification.Name(rawValue: "refresh"), object: nil)
+//        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    func notis() {
+        let aa = UserDefaults.standard.object(forKey: "records") as! NSArray
+        arr = aa.reversed() as NSArray
+        tableView.reloadData()
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         let aa = UserDefaults.standard.object(forKey: "records") as! NSArray
@@ -28,6 +34,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
             return arr.count
         
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y > 100 {
+           
+        }else {
+            
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rs")
