@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var taskId:UIBackgroundTaskIdentifier!
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AppDelegate.timing(_:)), userInfo: nil, repeats: true)
         if UserDefaults.standard.object(forKey: "records") == nil {
             let arr = NSArray.init()
             
@@ -116,23 +117,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        taskId = application.beginBackgroundTask(expirationHandler: { 
-            application.endBackgroundTask(self.taskId)
+//    two method 
+    func begin() {
+        let app = UIApplication.shared
+        taskId = app.beginBackgroundTask(expirationHandler: {
+//            app.endBackgroundTask(self.taskId)
+//            self.end()
         })
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AppDelegate.timing(_:)), userInfo: nil, repeats: true)
+
+    }
+    func end() {
+        let app = UIApplication.shared
+        app.endBackgroundTask(taskId)
+        taskId = UIBackgroundTaskInvalid
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        self.begin()
+//        self.end()
+//        taskId = application.beginBackgroundTask(expirationHandler: {
+//            application.endBackgroundTask(self.taskId)
+//        })
+        
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
     var count = 0;
     func timing(_ time:Timer) {
         count += 1
-        if count % 500 == 0 {
-            let app = UIApplication.shared
-            app.endBackgroundTask(taskId)
-            taskId = app.beginBackgroundTask(expirationHandler: nil)
-        }
+//        if count % 500 == 0 {
+//            let app = UIApplication.shared
+//            app.endBackgroundTask(taskId)
+//            taskId = app.beginBackgroundTask(expirationHandler: nil)
+//        }
+        print(count)
     }
    
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -141,6 +159,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
         NotificationCenter.default.post(name: NSNotification.Name.init("refresh"), object: nil)
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
